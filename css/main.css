@@ -1,0 +1,141 @@
+html, body, h1, h2, h3, h4, h5, h6, form, fieldset, img {  
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
+
+/* hide from IE mac \*/
+html {
+    min-height: 100%;
+    margin-bottom: 1px;
+}
+/* end hiding from IE5 mac */
+
+body {
+    font-size: 100.01%;
+    font-family: Arial, Verdana, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+#wrapper {
+    margin: 0 auto;
+	width: 1000px;
+}
+
+#header {
+	width: 1000px;
+}
+
+#innerwrapper {
+	background:#FFFFFF url('../images/background.jpg') no-repeat scroll center top;
+    margin: 0 auto;
+	width: 1000px;
+	text-align: center;
+	clear: both;
+	min-height: 1153px;
+}
+
+#sidemenu {
+	width: 150px;
+	float: left;
+	text-align: left;
+	padding-top: 50px;
+	padding-left: 0;
+}
+
+#content {
+	padding-top: 50px;
+	padding-left: 300px;
+	width: 500px;
+}
+
+h1#heading {
+	padding-top:40px;
+	text-align:center;
+	width:745px;
+}
+
+h2
+{
+    font-size: 1.2em;
+    font-family: Arial, Verdana, sans-serif;
+    color: #000;
+    background-color: #fff;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h3
+{
+	font-size: 1.0em;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+h4 {
+	text-decoration: underline;
+}
+
+p {
+	text-align: left;
+}
+
+a:link {
+	color: #666;
+	text-decoration: underline;
+	background-color: transparent;
+	font-weight: bold;
+}
+a:visited {
+	color: #668;
+	text-decoration: underline;
+	background-color: transparent;
+	font-weight: bold;
+} 
+a:hover {
+	color: #333;
+	text-decoration: none;
+	background-color: transparent;
+	font-weight: bold;
+}
+
+td {
+	text-align: left;
+}
+
+ul {
+	list-style-type: none;
+	text-align: left;
+	margin-left: 30px;
+}
+
+div#sidemenu ul {
+	margin-left: -50px;
+}
+
+div#sidemenu ul li {
+	font-size: 0.8em;
+	margin: 7px 0;
+	padding-left: 5px;
+}
+
+ol {
+	text-align: left;
+}
+
+#menu {
+	width: 100%;
+	margin: 10px auto;
+	text-align: center;
+    font: normal normal normal x-small Arial, Verdana, sans-serif;
+}
+
+#footer {
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+    font: normal normal normal x-small Arial, Verdana, sans-serif;
+    clear: both;
+}

@@ -1,0 +1,677 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="The story of August Anderson and his children from Borgvik, Sweden to America." />
+<meta name="keywords" content="August Anderson, Borgstrom, Sweden, Borgvik, America, immigration, family" />
+<meta name="title" content="The Children of August Anderson" />
+<meta name="robots" content="index, follow" />
+<meta name="distribution" content="global" />
+<title>The Children of August Anderson</title>
+<style>
+* {margin: 0; padding: 0;}
+
+body {
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	min-width: 10000px;
+}
+
+.instructions p {
+	color: #999;
+	padding: 10px 0 0 20px;
+}
+
+.tree ul {
+	padding-top: 20px; position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.tree li {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%; height: 20px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #ccc;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ float: none; padding-top: 0; }
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 1px solid #98b4c8;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid #98b4c8;
+	width: 0; height: 20px;
+}
+
+.tree li a{
+	border: 1px solid #98b4c8;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #666;
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	display: inline-block;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.tree li.marriage::before, .tree li.marriage::after, .tree li.marriage > a { border-color: #ccc; }
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+	background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+}
+.tree li.marriage > a:hover, .tree li.marriage a:hover+ul li.marriage > a {
+    background: #def;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  #94a0b4;
+}
+</style>
+</head>
+
+<body>
+<div class="instructions">
+	<p>*In order to view the tree structure properly, you must view this page in either FireFox, Chrome, Safari or IE9 or newer.</p>
+</div>
+<div class="tree">
+	<ul>
+		<li>
+			<a href="http://august-anderson.com/August-Anderson.htm">August Anderson</a>
+			<ul>
+				<li class="marriage">
+					<a href="http://august-anderson.com/August-Anderson.htm">August Anderson &amp;<br />Johanna Oldsetter Anderson</a>
+					<ul>
+						<li>
+							<a href="http://august-anderson.com/Andrew-Borgstrom.htm">Andrew Borgstrom</a>
+                            <ul>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/Andrew-Borgstrom.htm">Andrew Borgstrom &amp;<br />Hilda Hoglund Borgstrom</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Myrtle Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Walter Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mable Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mildred Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bernice Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Lea Borgstrom</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+						</li>
+						<li>
+							<a href="http://august-anderson.com/Karl-Borgstrom.htm">Karl Borgstrom</a>
+                            <ul>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/Karl-Borgstrom.htm">Karl Borgstrom &amp;<br />Jenny Anna Sandgren Borgstrom</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Karl Oscar Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Astrid Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Karl (Holmer) Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Enfred Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Herbert Borgstrom</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+						</li>
+						<li>
+							<a href="http://august-anderson.com/John-August-Borgstrom.htm">John August Borgstrom</a>
+                            <ul>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/John-August-Borgstrom.htm">John August Borgstrom &amp;<br />Jessie Miller Borgstrom</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Ilda Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Charlotte Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Alma Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Gertrude Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Flossie Borgstrom</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/John-August-Borgstrom.htm">John August Borgstrom &amp;<br />Ida Borgstrom</a>
+                                </li>
+                            </ul>
+						</li>
+					</ul>
+				</li>
+				<li class="marriage">
+					<a href="http://august-anderson.com/August-Anderson.htm">August &amp; Charlotte Anderson</a>
+					<ul>
+						<li>
+							<a href="http://august-anderson.com/Albin-Johanson.htm">Albin Johanson<br />(Charlotte's son)</a>
+						</li>
+						<li>
+                        	<a href="http://august-anderson.com/Matilda-Anderson.htm">Matilda Anderson</a>
+                            <ul>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/Matilda-Anderson.htm">Matilda Anderson Johanson <br />&amp; August Johanson</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Arne Johanson</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sven-Erik Svartmark</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+						<li>
+							<a href="http://august-anderson.com/Alma-Anderson.htm">Alma Anderson</a>
+                            <ul>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/Alma-Anderson.htm">Alma Anderson Nystrom <br />&amp; Otto Nystrom</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Fritz Nystrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Knute Nystrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Lisa Nystrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Inga Nystrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Erik Nystrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Majja Nystrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Marta Nystrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Rune Nystrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kajsa Nystrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sven Nystrom</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+						</li>
+						<li>
+                        	<a href="http://august-anderson.com/Anna-Anderson.htm">Anna Anderson</a>
+                        </li>
+						<li>
+                        	<a href="http://august-anderson.com/Otto-Anderson.htm">Otto Anderson</a>
+                            <ul>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/Otto-Anderson.htm">Otto Anderson &amp;<br />Henrietta Steel Anderson</a>
+                                </li>
+                            </ul>
+                        </li>
+						<li>
+                        	<a href="http://august-anderson.com/Clara-Borgstrom.htm">Clara Borgstrom</a>
+                            <ul>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/Clara-Borgstrom.htm">Clara Anderson Wilkerson <br />&amp; Rupert Wilkerson</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Floyd (Buster) Wilkerson</a>
+                                            <ul>
+                                                <li class="marriage">
+                                                    <a href="#">Floyd Wilkerson <br />&amp; Sachiko Wilkerson</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Charles Wilkerson</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">James Wilkerson</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">David Wilkerson</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Timothy Wilkerson</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/Clara-Borgstrom.htm">Clara Anderson Holm <br />&amp; Victor Holm</a>
+                                </li>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/Clara-Borgstrom.htm">Clara Anderson Billet <br />&amp; Mike Billet</a>
+                                </li>
+                            </ul>
+                        </li>
+						<li>
+                        	<a href="http://august-anderson.com/Hjalmar-Borgstrom.htm">Hjalmar Borgstrom</a>
+                            <ul>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/Hjalmar-Borgstrom.htm">Hjalmar Borgstrom &amp;<br />Ermin Miller Borgstrom</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Cole Borgstrom</a>
+                                            <ul>
+                                                <li class="marriage">
+                                                    <a href="#">Cole Borgstrom &amp;<br />Faye Campbell Borgstromg</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Jimmy Borgstrom</a>
+                                                            <ul>
+                                                                <li class="marriage">
+                                                                    <a href="#">Jimmy Borgstrom &amp;<br />Glenda Thomas Borgstrom</a>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="#">Tricia Borgstrom</a>
+    <ul>
+        <li class="marriage">
+            <a href="#">Tricia Borgstrom Vassar<br />&amp; Matt Vassar</a>
+            <ul>
+                <li>
+                    <a href="#">Elizabeth</a>
+                </li>
+                <li>
+                    <a href="#">Shaun</a>
+                </li>
+                <li>
+                    <a href="#">Hannah</a>
+                </li>
+                <li>
+                    <a href="#">Isabella</a>
+                </li>
+            </ul>
+        </li>
+        <li class="marriage">
+            <a href="#">Tricia Borgstrom Thierbach<br />&amp; Brian Thierbach</a>
+        </li>
+        <li class="marriage">
+            <a href="#">Tricia Borgstrom Duplichan<br />&amp; Shannon Duplichan</a>
+        </li>
+    </ul>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Cathy Borgstrom</a>
+    <ul>
+        <li class="marriage">
+            <a href="#">Cathy Borgstrom Benoit<br />&amp; Mark Benoit</a>
+            <ul>
+                <li>
+                    <a href="#">Breanna</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Linda Borgstrom</a>
+                                                            <ul>
+                                                                <li class="marriage">
+                                                                    <a href="#">Linda Borgstrom Oyler &amp;<br />"Mike" Leonard Michael Oyler</a>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="#">Shannon Oyler</a>
+    <ul>
+        <li class="marriage">
+            <a href="#">Shannon Oyler Willingham<br />&amp; Jason Willingham</a>
+            <ul>
+                <li>
+                    <a href="#">Morgan</a>
+                </li>
+                <li>
+                    <a href="#">Maci</a>
+                </li>
+                <li>
+                    <a href="#">Mason</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Eric Oyler</a>
+    <ul>
+        <li class="marriage">
+            <a href="#">Eric Oyler <br />&amp; Haley Hicks Isham Oyler</a>
+            <ul>
+                <li>
+                    <a href="#">Cole</a>
+                </li>
+                <li>
+                    <a href="#">Hugh</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Ryan Oyler</a>
+    <ul>
+        <li>
+            <a href="#">Kara</a>
+        </li>
+    </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="marriage">
+                                                                    <a href="#">Linda Borgstrom Boyd &amp;<br />"Jimmy" Thomas James Boyd</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Johnny Borgstrom</a>
+                                                            <ul>
+                                                                <li class="marriage">
+                                                                    <a href="#">Johnny Borgstrom &amp;<br />Debra Winton Borgstrom</a>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="#">Tammy Borgstrom</a>
+    <ul>
+        <li class="marriage">
+            <a href="#">Tammy Borgstrom Bohannon<br />&amp; Shawn Bohannon</a>
+            <ul>
+                <li>
+                    <a href="#">Sheyian</a>
+                </li>
+            </ul>
+        </li>
+        <li class="marriage">
+            <a href="#">Tammy Borgstrom Couch<br />&amp; Rodney Couch</a>
+            <ul>
+                <li>
+                    <a href="#">Jace</a>
+                </li>
+                <li>
+                    <a href="#">Avery</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Scheneista Borgstrom</a>
+    <ul>
+        <li class="marriage">
+            <a href="#">Scheneista Borgstrom Procter<br />&amp; Dee Procter</a>
+            <ul>
+                <li>
+                    <a href="#">James</a>
+                </li>
+                <li>
+                    <a href="#">Josiah</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Harold Borgstrom</a>
+                                            <ul>
+                                                <li class="marriage">
+                                                    <a href="#">Harold Borgstrom &amp;<br />LeElla Egnor Borgstrom</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Virgil Borgstrom</a>
+                                                            <ul>
+                                                                <li class="marriage">
+                                                                    <a href="#">Virgil Borgstrom &amp;<br />Shelly Gilmore Borgstrom</a>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="#">Gregory Borgstrom</a>
+                                                                            <ul>
+                                                                                <li class="marriage">
+                                                                                    <a href="#">Gregory Borgstrom &amp;<br />Stacie Richardson Borgstrom</a>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#">Amy</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#">Rachel</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Tommy Borgstrom</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Rhonda Borgstrom</a>
+                                                            <ul>
+                                                                <li class="marriage">
+                                                                    <a href="#">Rhonda Borgstrom Willyard<br />&amp; Charles Willyard</a>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="#">Kristopher Willyard</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Ronald Willyard</a>
+                                                                            <ul>
+                                                                                <li class="marriage">
+                                                                                    <a href="#">Ronald Willyard &amp;<br />LeeAnn Pierson Willyard</a>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#">Khylee</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#">Khloe</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="marriage">
+                                                                    <a href="#">Rhonda Borgstrom Willyard<br />&amp; Johnny Willyard</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Clifford Borgstrom</a>
+                                            <ul>
+                                                <li class="marriage">
+                                                    <a href="#">Clifford Borgstrom &amp;<br />Mary Clark Borgstrom</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Michael Borgstrom</a>
+                                                            <ul>
+                                                                <li class="marriage">
+                                                                    <a href="#">Michael Borgstrom &amp;<br />Sara Berry Borgstrom</a>
+                                                                </li>
+                                                                <li class="marriage">
+                                                                    <a href="#">Michael Borgstrom &amp;<br />Vanessa Morphen Borgstrom</a>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="#">Gregory</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Christopher</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Nancy Borgstrom</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+						<li>
+                        	<a href="http://august-anderson.com/Erik-Georg-Borgstrom.htm">Erik Georg Borgstrom</a>
+                            <ul>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/Erik-Georg-Borgstrom.htm">Erik Borgstrom &amp;<br />Bernice Holden Borgstrom</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Ronald Borgstrom</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/Erik-Georg-Borgstrom.htm">Erik Borgstrom &amp;<br />Helen Goff Borgstrom</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Richard Borgstrom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Carole Susan Borgstrom</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+						<li>
+                        	<a href="http://august-anderson.com/Gustav-Adolp-Anderson.htm">Gustav Adolp Anderson</a>
+                            <ul>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/Gustav-Adolp-Anderson.htm">Gustav Adolp Anderson &amp;<br />Kathie Johnson Anderson</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Frances (Kathie) Anderson</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Robert Anderson</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+						<li>
+                        	<a href="http://august-anderson.com/David-Harold-Borgstrom.htm">David Harold Borgstrom</a>
+                            <ul>
+                            	<li class="marriage">
+                                	<a href="http://august-anderson.com/David-Harold-Borgstrom.htm">David Harold Anderson &amp;<br />Leona Steele Anderson</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Carl Anderson</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kenneth Anderson</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</body>
+</html>
